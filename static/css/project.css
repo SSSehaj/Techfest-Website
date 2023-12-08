@@ -244,6 +244,24 @@ body {
   width:1000px
 }
 
+.aboutus {
+  border-radius: 15%;
+  text-align: center;
+  width:900px;
+  height:200px;
+  background-color:#141414;
+  padding: 50px;
+  border:rgb(156, 3, 3) solid 10px;
+  color:white;
+}
+
+.aboutmain {
+  display:grid;
+  place-items: center;
+  margin-top:200px;
+}
+
+
 
 
 
