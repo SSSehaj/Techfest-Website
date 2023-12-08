@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="x-icon" href="/static/IgniteLogo.png"
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <title>Ignite 6.0</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/css/project.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='/css/responsive.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+          $(".netflix-navbar").css("background-color" , "#0C0C0C");
+        }
+  
+        else{
+          $(".netflix-navbar").css("background-color" , "transparent");  	
+        }
+    });
+
+  })
+        </script>
+    </head>
+    <style>
+      .primecardtitle {
+        color:white;
+        font-style:bold;
+        text-align: center;
+      }
+
+      .inline-elements {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .aboutus {
+        border-radius: 15%;
+        text-align: center;
+        width:900px;
+        height:200px;
+        background-color:#141414;
+        padding: 50px;
+        border:rgb(156, 3, 3) solid 10px;
+        color:white;
+      }
+
+      .aboutmain {
+        display:grid;
+        place-items: center;
+        margin-top:200pu;
+      }
+
+    </style>
+    <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    
+      <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-right netflix-padding-left">
+        <div class="container-fluid">
+          
+          <div class="netflix-row">
+            <section class="left d-flex align-items-center">
+              <a class="navbar-brand">
+                <img src="/static/ignitenet.png" alt="..">
+              </a>
+              <div class="netflix-dropdown-box dropdown">
+                <button class="netflix-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Browse
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#events">Events</a></li>
+                  <li><a class="dropdown-item" href="#about">About Us</a></li>
+                  <li><a class="dropdown-item" href="#team">The Team</a></li>
+                  <li><a class="dropdown-item" href="#ignite5">Ignite 5.0</a></li>
+                  <li><a class="dropdown-item" href="#sponsors">Our Sponsors</a></li>
+                </ul>
+              </div>
+              <div class="netflix-nav">
+                <section>
+                  <button><a href="#events">Events</button>
+                  <button><a href="#about">About Us</button>
+                  <button><a href="#ignite5.0">Ignite 5.0</button>
+                  <button><a href="#team">The Team</button>
+                  <button><a href="#sponsors">Our Sponsors</button>
+                </section>
+              </div>
+            </section>
+            <section class="right"></section>
+          </div>
+        </div>
+      </nav>
+      <div class="">
+        <section class="netflix-home-video">
+          <div class="top"></div>
+          <div class="bottom"></div>
+          <video src="/static/aftermovie.mov" autoplay muted loop></video>
+        </section>
+      </div>
+      <div>
+        <div id="group1" class="slider-box">
+          <section class="container-fluid slider1">
+            <br>
+            <div class="d-flex justify-content-between">
+              <p class="text-white"><b>Continue Registering<b></b></p>
+  
+              <div>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>              
+              </div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+              <div class="carousel-inner" style="position: relative; overflow: visible;">
+                <!--slide 1-->
+                <div class="carousel-item active">
+                  <section class="d-flex" style="position:absolute;">
+                    <!--card start-->
+                    <div class="card event-card">
+                      <img src="./static/events/warz.jpg" class="card-img-top" alt="World War Z Event">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Bomb defusal . Programming Quest . Time crunch</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1-K-7lmUBnZnKN9bzyszp-3KaRivyYJd9PbFZUwd03q4/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--card end-->
+
+                    <div class="card event-card">
+                      <img src="/static/events/Alice.png" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Innovative . Competitive . Techcentric</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1ZYRSjPeQQUvFY-zbGcET_VZw8Au3yPcW3j-9NdJoARg/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card event-card">
+                      <img src="/static/events/shark.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Sales pitch . Entreprenaurship . SharkTank</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1-YqhU0PP36Jn5ImVFo6XHmc4iqitUc8eRPwUeIGmxHo/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card">
+                      <img src="/static/events/money.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Thrilling . Interactive . Streaming</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1Jj2jsAoAcyqWlZDg1W-op44WzVFNQWHKro9DUu0pe7s/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!--slide3-->
+                <div class="carousel-item">
+                  <section class="d-flex" style="position:absolute;">
+                    <div class="card event-card">
+                      <img src="/static/events/maze.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Minecraft . Detective . Mystery</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1iEKc5Vtrw_Keqm8VXyN4uvZeNGqGrhxlGKkTXh85EGc/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card">
+                      <img src="/static/events/jumanji.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Virtual Adventure . Treasure Hunt . Quest</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1VN54vF8isuXv-ADVNKIIDSc-xcDB-pPcb2rSp9-JMDc/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card">
+                      <img src="/static/events/jug.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Musical . Party . Harmonious</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1qoUcVHlU4Pj6-clgRM8rlOogHRNEHseFVcWudIlHdvA/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card">
+                      <img src="/static/events/inside.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white">Cricket Strategy . Team building . Auction</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1vFuPtFUcH5txtN05qFuM8chgn4FrfBlPHuskW1Uh6NA/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="carousel-item">
+                  <section class="d-flex" style="position:absolute;">
+                    <div class="card event-card">
+                      <img src="/static/events/terminator.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> AI Battle . Time travel . Mission</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1-K-7lmUBnZnKN9bzyszp-3KaRivyYJd9PbFZUwd03q4/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card">
+                      <img src="/static/events/health.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Healthcare . Machine learning . Innovation</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/11A11ldG4J57W1YmmqevcFX8pjMw3id3GxP2fg55pzt4/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card">
+                      <img src="/static/events/wargames.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white">Stratgeic . Gaming . Excitement</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/12TGcROOEanY-gTWLTTdkZ8nMkNnlb57MlXkCfbcNGsY/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card">
+                      <img src="/static/events/bgmi.jpg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> ZOmbie survival . BGMI . Battle royale</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1LXo36IiaRCSoV9oJvJL8sOmLiwtOXEMes3NgQvUfGHs/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card event-card hide">
+                      <img src="/static/events/vegas.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body event-card-body">
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"  class="event-card-icon" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                              <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="event-card-icon" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                            </svg>
+                          </div>
+                        </section>
+                        <p class="m-0 event-card-text text-white"> Gamble . Thrill . Excitement</p>
+                        <div style="text-align: center;">
+                          <a  href="https://docs.google.com/forms/d/1bwdb4iOlsKEQgB3niIUQEgB67JJeRq-9ltkB_EK-tmg/viewform?edit_requested=true" class="btn btn-light"><p class="register">Register Now</p></a>
+                        </div>
+                      </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="aboutmain">
+        <div class="aboutus">
+          <p>Ignite is the annual flagship event of SVKM'S NMIMS Navi
+            Mumbai, engineered by the students of school of technology
+            management and engineering. Post the miraculously
+            successful fest, Ignite 6.0 is back to its absolute form, with
+            events being held with more enthusiasm and ardor than ever
+            before.</p>
+        </div>
+        <br><br><br><br>
+        <div>
+          <img src="../static/director.png" class="dirmessage" alt="Director's Message">
+        </div>
+        <br><br>
+        <div>
+          <img src="../static/chairperson.png" class="chairmessage" alt="Chairperson's Message">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep12" viewBox="0 0 1600 200" style="display: block; background-color:black" data-height="200">
+          <polygon class="" style="fill:rgb(0, 83, 175);" points="-4,24 800,198 1604,24 1604,204 -4,204 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: rgb(202, 65, 65)" points="-4,0 800,198 1604,0 1604,11.833 800,198 -4,12 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: rgb(197, 157, 157); filter: drop-shadow(10px 10px 5px white);" points="-4,12 -4,24 800,198 1604,24 1604,11.833 800,198 "></polygon></svg>
+          </div>
+        </div>
+      </div>
+      <div id="team" style=" color: white; text-align:center; background-color:rgb(0, 83, 175);">
+        <img src="static\the prime team.png" width="400" height="400" alt="The team of ignite 6.0" style="padding-top:0px; filter:drop-shadow(10px 10px 5px black);">
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Leaders 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Ritika.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Ritika Amaresh</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Sumumkh Gour</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Admins 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Aryan.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Aryan Tiwari</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Aman.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Aman Mishra</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Aarya.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Aarya Sawant</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sneha.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Sneha Singh</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Vrishank.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Vishank Nalawde</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Yashshri.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Yashashri Joshi</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Haripriya.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Haripriya Saraf</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Finance Head</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Lokesh.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Lokesh Suryavanshi</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Events 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Ritika.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Oorja Mishra</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Swayam Singh</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Logistics 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Ritika.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Vansh Paramr</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Lishang</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Sponsorship Head</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Ritika.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Niharika Singh</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>PR 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/PR/Mahek Gupta_.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Mahek Gupta</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Archit</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Krisha</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Technical Head</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Atharva.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Atharva Patil</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Marketing 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/PR/Kunal.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Kunal Shenoy</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/PR/Shubham.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Shubham Agre</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/PR/Manjindar.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Manjindar</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Creatives 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/PR/Archi.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Archi Jain</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Lakshita</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Sunny Bagal</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Editorial 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/PR/Vikrant.png" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Vikrant Arora</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/PR/Kavya.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Kavya</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left; padding-left:30px; font-size: 24px; padding:45px">
+          <p style="color:rgb(255, 217, 4)"><b>Photography 6.0</b></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Ritika.jpg" class="card-img-top"alt="head">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Head - Sharvani</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="../static/team/Stuco/Sumukh.JPG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">CoHead - Kavya Agarwal</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div  id="ignite5.0" style="text-align:left; padding-left:30px; font-size:24px; padding:45px">
+          <p><p style="color:rgb(255, 217, 4)"><b>Because you have watched ignite 5.0</b></p>
+          <div class="row row-cols-1 row-cols-md-4 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Opening.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Opening Ceremony</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Eyantra.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">E-Yantra</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <video src="/static/ignite5/valo2.mp4" autoplay muted loop class="card-img-top" alt="..."></video>
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Valorant Event</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/VR.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">VR Event</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-4 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Quizzards.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Quizzards of Oz</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <video src="/static/ignite5/bollywood.MOV" muted autoplay loop class="card-img-top" alt="..."></video>
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Bollywood Day</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Escape.jpg" autoplay muted loop class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Escape Room</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Mint it.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Mint It!</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-4 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Pandora.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Pandora's Box</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Glow.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Glow Cricket</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Clone it.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Clone It!</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <video src="/static/ignite5/flashmob.mov" muted autoplay loop class="card-img-top" alt="..."></video>
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Flashmob</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-4 g-4" style="filter:drop-shadow(5px 5px 5px black);">
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/IPL.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">IPL Auction</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3">
+                <img src="/static/ignite5/Closing.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <img src="/static/play.png" alt="play" height="34px" width="40px">
+                  <h5 class="card-title primecardtitle inline-elements" style="text-align: right;">Closing Ceremony</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="second" class="blue hot-section">
+        <svg class="separator" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+            <g transform="translate(-18.298844,-77.973964)">
+                <path style="fill:rgb(19, 2, 80);" d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+                <path style="fill:rgb(0, 83, 175);" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+            </g>
+        </svg>
+      </section>
+      <div id="sponsors" style="background-image:linear-gradient(darkblue,lightblue); text-align:center;">
+        <img src="./static/sponsors/sponsorp.png" width="400" height="400" alt="The sponsors of Ignite 6.0" style="padding-top:0px; filter:drop-shadow(10px 10px 5px black);">
+        <div class="row row-cols-1 row-cols-md-2 g-3" style="margin:50px;">
+          <div class="col">
+            <div class="card">
+              <img src="../static/yolo247.png" width="300" height="300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Title Sponsor</h5>
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="col">
+            <div class="card">
+              <img src="./static/sponsors/kattyz.png" class="card-img-top" width="300" height="300" alt="Kattyz">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Food Sponsor</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./static/sponsors/belgian.jpeg" class="card-img-top"  width="350"; height="350" alt="Belgian Waffle">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Food Sponsor</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../static/Hustle.png" class="card-img-top"  width="200"; height="350" alt="Belgian Waffle">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Energy Drink Sponsor</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../static/skilleds.png" class="card-img-top"  width="300"; height="400" alt="skilled spaiens">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Knowledge Partner</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/static/sponsors/topone.png" class="card-img-top" alt="top one percent">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">EdTech Partner</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="../static/plum.jpg" class="card-img-top"  width="300"; height="300"  alt="plum goodness">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Co Powered By</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/static/sponsors/unstop.jpeg" class="card-img-top" alt="Unstop">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Powered By</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../static/Mpower.png" class="card-img-top"height="300" width="300" alt="M power">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Mental Health Partner</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="/static/sponsors/easemytrip.png" class="card-img-top" alt="easemytrip">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Travel Partner</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/static/sponsors/jimmys.png" class="card-img-top"  width="350"; height="350"  alt="jimmy's drinks">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Celebration Partner</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/static/sponsors/sachkahoon.png" class="card-img-top" alt="sach kahoon">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Media Partner</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/static/sponsors/boostgrad.jpeg" class="card-img-top" width="350"; height="350"  alt="boostgrad">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Career Empowerment Partner</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="/static/sponsors/jiosavan.png" class="card-img-top" alt="jiosavan">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Music Partner</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../static/quality.jpg" class="card-img-top"  width="350"; height="350" alt="quality kiosk">
+              <div class="card-body">
+                <img src="/static/sponsors/blueplay.png" alt="play" height="24px" width="30px">
+                <h5 class="card-title hotheads inline-elements">Corporate Partner</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+      </div>
+      <br>
+      <div style=" text-align: center; color:white;" >
+        <p><img src="./static/copyright.png" height="24" width="30" alt="instagram"> Ignite 2023, NMIMS Navi Mumbai</p>
+        <a href="https://instagram.com/nmignite?igshid=MTNiYzNiMzkwZA=="><img src="./static/instagram.png" height="44" width="60" alt="instagram"></a>
+      </div>
+      <br><br>
+    </body>
+</html>
