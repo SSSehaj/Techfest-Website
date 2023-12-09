@@ -50,13 +50,18 @@
     .aboutmain {
         display:grid;
         place-items: center;
-        margin-top:200px;
+        margin-top:5px;
         position:relative;
 
     }
     
     .aboutus {
         width:600px;
-        height:200px
+        height:700px;
+        margin-top:50px;
+    }
+    .welcome {
+        height:75px;
+        width:250px;
     }
 }

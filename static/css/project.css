@@ -252,23 +252,23 @@ body {
   place-content: center;
   background-image: url(../netchill.jpg);
   width:900px;
-  height:400px;
+  height:550px;
   background-color:#141414;
   padding: 50px;
   border:rgb(156, 3, 3) solid 10px;
   color:white;
-  margin-top:100px;
+  margin-top:60px;
 }
 
 .aboutmain {
   display:grid;
   place-items: center;
+  margin-top:100px;
 }
 
 .welcome {
   margin-top:200px;
+  height:150px;
+  width:400px;
 }
-
-
-
 
