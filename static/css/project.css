@@ -170,6 +170,7 @@ body {
   background:#141414;
   border-radius:4px;
   margin: 3px;
+  position:relative;
 }
 
 .hot-card-title {
@@ -219,11 +220,11 @@ body {
   padding: 10px 15px;
   position: absolute;
   background-color: #141414;
-  top:120px;
+  top:130px;
   width:100%;
 }
 
-.event-card:hover > .event-card-body {
+.event-card:hover .event-card-body {
   display:block;
 
 }
@@ -245,22 +246,28 @@ body {
 }
 
 .aboutus {
-  border-radius: 15%;
+  border-radius: 5%;
   text-align: center;
+  font-size: 18px;
+  place-content: center;
+  background-image: url(../netchill.jpg);
   width:900px;
-  height:200px;
+  height:400px;
   background-color:#141414;
   padding: 50px;
   border:rgb(156, 3, 3) solid 10px;
   color:white;
+  margin-top:100px;
 }
 
 .aboutmain {
   display:grid;
   place-items: center;
-  margin-top:200px;
 }
 
+.welcome {
+  margin-top:200px;
+}
 
 
 

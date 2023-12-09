@@ -43,8 +43,20 @@
     }
 
     .dirmessage,.chairmessage {
-        height: 100px;
-        width:200px;
-      }
-      
+        height: 300px;
+        width:600px;
+    }
+
+    .aboutmain {
+        display:grid;
+        place-items: center;
+        margin-top:200px;
+        position:relative;
+
+    }
+    
+    .aboutus {
+        width:600px;
+        height:200px
+    }
 }
