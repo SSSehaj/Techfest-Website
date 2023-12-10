@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/19482e47-ccc1-4715-9b86-c82d3667ca6b/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Ignite-website-deploy-xyz",
+    "appService.deploySubpath": "."
+}

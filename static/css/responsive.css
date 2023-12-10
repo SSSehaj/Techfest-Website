@@ -16,17 +16,39 @@
         display:none;
     }
 
+    .event-card-2 {
+        width:90px;
+    }
+
     .event-card {
-        width:150px;
+        width:110px;
     }
+
+    .event-card-2-icon {
+        font-size: 10px !important;
+        width:12px;
+        height:9px;
+    }
+
     .event-card-icon {
-        font-size: 17px !important;
-        width:20px;
-        height:14px;
+        font-size: 12px !important;
+        width:14px;
+        height:10px;
     }
+
+    .register-2 {
+        font-size:12px;
+        font-weight:0;
+        color:red;
+    }
+
     .register {
         font-size:12px;
         font-weight:0;
+    }
+
+    .btn-2 {
+        width:10px;
     }
 
     .btn {
@@ -39,12 +61,12 @@
         margin-left: 0px;
     }
     .event-card-body {
-        top:80px;
+        top:40px;
     }
 
     .dirmessage,.chairmessage {
-        height: 300px;
-        width:600px;
+        height: 250px;
+        width:350px;
     }
 
     .aboutmain {
@@ -54,14 +76,20 @@
         position:relative;
 
     }
+
+    .event-card-2-text {
+        font-size: 10px;
+    }
     
     .aboutus {
-        width:600px;
-        height:700px;
+        font-size: 14px;
+        width:450px;
+        height:630px;
         margin-top:50px;
     }
     .welcome {
         height:75px;
         width:250px;
+        margin-top:300px;
     }
 }

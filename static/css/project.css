@@ -165,6 +165,15 @@ body {
   background: linear-gradient(to bottom, transparent, #141414);
 }
 
+.event-card-2 {
+  width: 100px;;
+  background:#141414;
+  border-radius:4px;
+  margin: 3px;
+  position:relative;
+
+}
+
 .event-card {
   width:100%;
   background:#141414;
@@ -187,11 +196,25 @@ body {
   text-align:center;
 }
 
-
+.event-card-2:hover {
+  transform: scale(1.2);
+  z-index:10;
+}
 .event-card:hover {
   transform: scale(1.2);
   z-index:10;
 }
+
+.event-card-2-icon{
+  color:white;
+  padding: 0px !important;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  width:30px;
+  height:24px;
+}
+
 
 .event-card-icon{
   color:white;
@@ -222,6 +245,10 @@ body {
   background-color: #141414;
   top:130px;
   width:100%;
+}
+
+.event-card-2:hover .event-card-body {
+  display:block;
 }
 
 .event-card:hover .event-card-body {
