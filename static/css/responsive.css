@@ -16,6 +16,10 @@
         display:none;
     }
 
+    .align {
+        margin-top:200px;
+      }      
+
     .event-card-2 {
         width:90px;
     }
@@ -90,6 +94,6 @@
     .welcome {
         height:75px;
         width:250px;
-        margin-top:300px;
+        margin-top:50px;
     }
 }
