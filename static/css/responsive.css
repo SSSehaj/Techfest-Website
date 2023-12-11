@@ -21,7 +21,7 @@
       }      
 
     .event-card-2 {
-        width:80px;
+        width:70px;
     }
 
     .event-card {
@@ -30,7 +30,7 @@
 
     .event-card-2-icon {
         font-size: 12px !important;
-        width:8px;
+        width:7px;
         height:9px;
     }
 
@@ -41,7 +41,7 @@
     }
 
     .register-2 {
-        font-size:12px;
+        font-size:9px;
         font-weight:0;
         color:red;
     }
@@ -87,13 +87,13 @@
     }
 
     .event-card-2-text {
-        font-size: 8px;
+        font-size: px;
     }
     
     .aboutus {
         font-size: 12px;
-        width:400px;
-        height:700px;
+        width:330px;
+        height:780px;
         margin-top:50px;
     }
     .welcome {
