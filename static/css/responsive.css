@@ -21,23 +21,23 @@
       }      
 
     .event-card-2 {
-        width:90px;
+        width:80px;
     }
 
     .event-card {
-        width:110px;
+        width:90px;
     }
 
     .event-card-2-icon {
-        font-size: 10px !important;
-        width:12px;
+        font-size: 12px !important;
+        width:8px;
         height:9px;
     }
 
     .event-card-icon {
         font-size: 12px !important;
-        width:14px;
-        height:10px;
+        width:12px;
+        height:8px;
     }
 
     .register-2 {
@@ -49,6 +49,7 @@
     .register {
         font-size:12px;
         font-weight:0;
+        color:red;
     }
 
     .btn-2 {
@@ -81,19 +82,28 @@
 
     }
 
+    .event-card-text {
+        font-size:8px;
+    }
+
     .event-card-2-text {
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .aboutus {
-        font-size: 14px;
-        width:450px;
-        height:630px;
+        font-size: 12px;
+        width:400px;
+        height:700px;
         margin-top:50px;
     }
     .welcome {
-        height:75px;
+        height:90px;
         width:250px;
         margin-top:50px;
+    }
+
+    .hotstar,.primelogo {
+        height:250px;
+        width:250px;
     }
 }

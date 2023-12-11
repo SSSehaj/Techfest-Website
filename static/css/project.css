@@ -230,7 +230,7 @@ body {
   height:24px;
 }
 
-.register {
+.register,.register-2 {
   font-size:12px;
   font-weight:0;
   padding:0px !important;
@@ -266,7 +266,7 @@ body {
   z-index: 500;
 }
 
-.event-card-text {
+.event-card-text,.event-card-2-text {
   font-size: 12px;
   text-align: center;
 }
