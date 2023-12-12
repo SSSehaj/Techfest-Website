@@ -18,26 +18,20 @@
 
     .align {
         margin-top:200px;
-      }      
+    }    
 
     .event-card-2 {
-        width:70px;
+        width:125px;
     }
-
+    
     .event-card {
-        width:90px;
-    }
-
-    .event-card-2-icon {
-        font-size: 12px !important;
-        width:7px;
-        height:9px;
+        width:190px;
     }
 
     .event-card-icon {
-        font-size: 12px !important;
-        width:12px;
-        height:8px;
+        font-size: 17px !important;
+        width:22px;
+        height:29px;
     }
 
     .register-2 {
@@ -52,6 +46,11 @@
         color:red;
     }
 
+    .event-card-2:hover > .event-card-2-body{
+        display:block;
+    }
+      
+
     .btn-2 {
         width:10px;
     }
@@ -61,12 +60,18 @@
         width:80px;
         font-size:17px !important;
     }
+
     .slider1 {
         top: 250px;
         margin-left: 0px;
     }
+
     .event-card-body {
-        top:40px;
+        top:100px;
+    }
+
+    .event-card-2-body {
+        top:60px;
     }
 
     .dirmessage,.chairmessage {
@@ -83,11 +88,17 @@
     }
 
     .event-card-text {
-        font-size:8px;
+        font-size:12px;
     }
 
     .event-card-2-text {
-        font-size: px;
+        font-size: 10px;
+    }
+
+    .event-card-2-icon {
+        font-size: 17px !important;
+        width:15px;
+        height:18px;
     }
     
     .aboutus {
@@ -96,6 +107,7 @@
         height:780px;
         margin-top:50px;
     }
+
     .welcome {
         height:90px;
         width:250px;
@@ -105,5 +117,13 @@
     .hotstar,.primelogo {
         height:250px;
         width:250px;
+    }
+
+    .desktop {
+        display:none;
+    }
+
+    .mobile {
+        display:flex;
     }
 }

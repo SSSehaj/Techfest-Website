@@ -243,7 +243,7 @@ body {
   padding: 0px !important;
 }
 
-.event-card-body {
+.event-card-body, .event-card-2-body {
   display:none;
   padding: 10px 15px;
   position: absolute;
@@ -303,4 +303,9 @@ body {
   height:150px;
   width:400px;
 }
+
+.mobile {
+  display:none;
+}
+
 
