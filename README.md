@@ -1,7 +1,7 @@
 
 # Ignite 6.0 website - A website for the 6th iteration of the annual Techfest of NMIMS Navi Mumbai
 
-  ![booksphere](https://github.com/Progpr/BookSphere-Library-Management-System/assets/95381092/62b65334-49fa-4c27-ab84-615060cdc1b6)
+ https://github.com/Progpr/ignite5/assets/95381092/aef123ad-75b0-497d-855f-3520e9fb1e06
 
 
 This is a front end only project which acts a medium for students or participants to register for their desired events in the techfest. With the theme of this year's techfest being OTT, I decided to give it a primary theme of Netflix. Here, I created a UI similar to Netflix with the navbar becoming opaque on scrolling plus the events being displayed as a carousel slider. Each event would then lead to a google form so for our participants to proceed to the registration. Next theme is Amazon Prime where I took the time to introduce our team members and some highlights from our last iteration of the techfest. Lastly to promote our sponsors, I created a Disney plus Hotstar like theme. The website was deployed and hosted on Microsoft Azure where I also utilized its private DNS service to set a custom domain. The address of the website (Now Disabled) is https://nm-ignite.co.in/. **My website aided in receiving 366 event registrations**
