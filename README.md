@@ -8,7 +8,7 @@ This is a front end only project which acts a medium for students or participant
 
 + [TechStack](#TechStack)
 + [Features](#Features)
-+ [Run Locally](#Screenshots)
++ [Run Locally](#RunLocally)
 
 
 ## TechStack
