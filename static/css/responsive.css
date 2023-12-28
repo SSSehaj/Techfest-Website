@@ -126,4 +126,8 @@
     .mobile {
         display:flex;
     }
+    
+    .schedule {
+        height:500px;
+    }
 }

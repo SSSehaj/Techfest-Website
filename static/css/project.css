@@ -308,4 +308,7 @@ body {
   display:none;
 }
 
-
+.schedule {
+  height:800px;
+  width:100%;
+}
