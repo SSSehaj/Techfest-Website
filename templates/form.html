@@ -2,17 +2,20 @@
 <html>
     <head>
         <title>Event egistration</title>
-        <style>
-
-        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     </head>
+    <style>
+        body,main {
+            background-image: linear-gradient(black,rgb(146, 14, 14));
+        }
+    </style>
     <body>
         {% block body %}
         {% endblock %}
     </body>
     <main style="text-align: center;">
         <div ng-app="myapp" ng-controller="myctrl">
-            <form name="form1">
+            <form name="form1" ng-submit="submitForm()"  action="/register" method="post" novalidate>
                 <div class="mb-3">
                     <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tname" placeholder="Team Name" type="text" ng-model="event.tname" required>
                     <span ng-show="form1.tname.$dirty && form1.tname.$error.required">Team Name is required.</span>
@@ -39,18 +42,41 @@
                 </div>
 
                 <div class="mb-3">
-                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem3" placeholder="Team Name" type="text" ng-model="event.tname" required>
-                    <span ng-show="myForm.username.$dirty && myForm.username.$error.required"> Name is required.</span>
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem3" placeholder="Team Member #3" type="text" ng-model="event.tmem3" required>
+                    <span ng-show="form1.tmem3.$dirty && forn1.tmem3.$error.required"> Name is required.</span>
                 </div>
 
                 <div class="mb-3">
-                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem4" placeholder="Team Name" type="text" ng-model="event.tname" required>
-                    <span ng-show="myForm.username.$dirty && myForm.username.$error.required"> Name is required.</span>
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem4" placeholder="Team Name" type="text" ng-model="event.tmem4" required>
+                    <span ng-show="form1.tmem4.$dirty && form1.tmem4.$error.required"> Name is required.</span>
                 </div>
+
+                <button class="btn btn-danger" type="submit">Register</button>
             </form>
         </div>
+        <script>
+            var app = angular.module('myapp',[]);
+
+            app.contoller('mtycrl', function($scope){
+                $scope.event = {};
+                $scope.submitForm = function () {
+                    if ($scope.myForm.$valid) {
+                        $http.post('/register', $scope.user)
+                            .then(function (response) {
+
+                                window.location.href = '/';
+                            })
+                            .catch(function (error) {
+                                //catching error
+                            });
+                    }
+                };
+            });
+
+        </script>
         <div>
             <b>The Team Leaders must ensure that their entire team is present during the time of the event</b>
+            <b>See you there!</b>
         </div>
     </main>
 </html>
