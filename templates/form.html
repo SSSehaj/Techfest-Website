@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event egistration</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+    <main style="text-align: center;">
+        <div ng-app="myapp" ng-controller="myctrl">
+            <form name="form1">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tname" placeholder="Team Name" type="text" ng-model="event.tname" required>
+                    <span ng-show="form1.tname.$dirty && form1.tname.$error.required">Team Name is required.</span>
+                </div>
+
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tleader" placeholder="Team Leader's Name" type="text" ng-model="event.tleader" required>
+                    <span ng-show="myForm.username.$dirty && myForm.username.$error.required">Name is required</span>
+                </div>
+
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tph1" placeholder="Team Leader Phone Number" type="number" ng-model="event.tph1" required>
+                    <span ng-show="form1.tph1.$dirty && form1.tph1.$error.required">Phone number required</span>
+                </div>
+
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem1" placeholder="Team Member #1" type="text" ng-model="event.tmem1" required>
+                    <span ng-show="form1.tmem1.$dirty && form1.tmem1.$error.required"> Name is required.</span>
+                </div>
+
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem2" placeholder="Team Member #2" type="text" ng-model="event.tmem2" required>
+                    <span ng-show="form1.tmem2.$dirty && form1.tmem2.$error.required"> Name is required.</span>
+                </div>
+
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem3" placeholder="Team Name" type="text" ng-model="event.tname" required>
+                    <span ng-show="myForm.username.$dirty && myForm.username.$error.required"> Name is required.</span>
+                </div>
+
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tmem4" placeholder="Team Name" type="text" ng-model="event.tname" required>
+                    <span ng-show="myForm.username.$dirty && myForm.username.$error.required"> Name is required.</span>
+                </div>
+            </form>
+        </div>
+        <div>
+            <b>The Team Leaders must ensure that their entire team is present during the time of the event</b>
+        </div>
+    </main>
+</html>
