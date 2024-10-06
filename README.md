@@ -1,5 +1,5 @@
 
-# Ignite 6.0 website - A website for the 6th iteration of the annual Techfest of NMIMS Navi Mumbai
+# Ignite 7.0 website - A website for the 7th iteration of the annual Techfest of NMIMS Navi Mumbai
 
 ## Video Demo
 https://github.com/Progpr/Techfest-Website/assets/95381092/e96be11d-09ff-4801-ac57-d4dc2c1a75ab
